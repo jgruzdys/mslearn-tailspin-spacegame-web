@@ -54,9 +54,12 @@ steps:
     arguments: '--no-build --configuration $(buildConfiguration) --output $(Build.ArtifactStagingDirectory)/$(buildConfiguration)'
     zipAfterPublish: true
 
+<<<<<<< HEAD
 - task: WhiteSource Bolt@19
   displayName: 'Run WhiteSource Bolt'
 
+=======
+>>>>>>> 6ec0acb43e7490ab373290409f0686cf664a066e
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
   condition: succeeded()
